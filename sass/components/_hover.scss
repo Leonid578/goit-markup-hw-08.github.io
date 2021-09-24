@@ -1,0 +1,22 @@
+
+.hover{
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--timing-function);
+
+        &:hover, 
+        &:focus {
+        color: var(--mail-title-color);
+        // fill: var(--mail-title-color);
+    }
+    
+}
+.navigations .hover{
+    font-weight: 500;
+}
+
+.header-right .hover{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}
+

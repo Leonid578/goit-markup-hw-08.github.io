@@ -1,0 +1,66 @@
+.button-submit{
+    min-width: 200px;
+    max-height: 50px;
+    color: var(--mail-title-color);
+    margin-left: 12px ;
+    padding: 1px 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border: 0px;
+
+        &:hover,
+        &:focus{
+        background-color: #188ce8;
+    }
+}
+    
+.submit-svg{
+    margin-left: 10px;
+    background-image: url('../Images/send.svg');
+}
+.botton-form{
+    display: flex;
+    margin-top: 20px;
+}
+    
+    
+.button{
+    text-transform: none;
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+  
+  .close-button {  
+    width: 18px;
+    height: 18px;
+
+    transition: var(--time-animation);
+  
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);      
+    }
+}

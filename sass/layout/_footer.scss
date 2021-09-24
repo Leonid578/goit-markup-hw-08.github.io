@@ -1,0 +1,140 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-address{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--mail-title-color);
+}
+
+.footer-mail,.footer-tel{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+  .address-footer-link{
+    padding-left: 0px;
+}
+
+.icon-footer{
+    fill: var(--mail-title-color);
+}
+
+.soc-footer {
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  .footer-mail:hover,
+  .footer-mail:focus,
+  .footer-tel:focus, 
+  .footer-tel:hover {
+      color: var(--accent-color);
+  }
+
+.footer-form{
+    flex-grow: 2;
+    margin-left: 93px;
+}
+.footer-title{
+    color: var(--mail-title-color);
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--mail-title-color);
+}
+
+.footer-sections{
+    background-color: var(--footer-color);
+    padding: 60px 0px;
+    color: var(--fon-color);
+}
+
+.container-footer {
+    margin-right: 70px;
+  }
+
+.join {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--mail-title-color);
+
+margin-bottom: 20px;
+}
+
+.posicion-foot{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.filter:hover,
+.filter:focus {
+    background-color: var(--accent-color);
+    color: var(--mail-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-text > li{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bottom--address{
+    margin-top: 20px;
+}
+
+ul .address--write:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-sections .logo{
+    color: var(--mail-title-color);
+}
+
+.footer-submit{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 16px;
+    color: var(--secondary-text-color);
+    outline: none;
+    transition-property: border;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}

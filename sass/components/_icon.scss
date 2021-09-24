@@ -1,0 +1,47 @@
+
+
+.form-icon{
+    position: absolute;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    transition: fill 250ms var(--timing-function);
+  }
+
+
+  .icon-check{
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    border: 1px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: var(--time-animation);
+    transition:var(--timing-function);
+}
+
+.checkbox:checked + .icon-check{
+    background-color: var(--accent-color);
+    background-image: url('../Images/check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat:no-repeat;
+    background-size: 15px 16px;
+    border: none;
+}
+
+.icon-check:hover,
+.icon-check:focus,
+.footer-submit:hover,
+.footer-submit:focus{
+    border-color: var(--accent-color);
+    animation: var(--time-animation);
+}
+
+
+
+
+
+
+

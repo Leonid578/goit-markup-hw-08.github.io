@@ -1,0 +1,35 @@
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .header &{
+        display:flex;  
+        align-items: center;
+        max-width: 1200px;
+     }
+
+     .header &{
+        display:flex;  
+        align-items: center;
+        max-width: 1200px;
+     }
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-clients {
+    text-align: center;
+  }
+
+ 
+ 
+
+
+
