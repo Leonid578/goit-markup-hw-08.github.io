@@ -68,24 +68,8 @@
     align-items: center;
 }
 
-
-.social-links .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: #afb1b8;}
-
-
  .social-item li + li {
      margin-left: 10px;
- }
-
- .social-links .link:hover,
- .social-links .link:focus {
-   background-color: var(--brand-color);
  }
 
  .item{

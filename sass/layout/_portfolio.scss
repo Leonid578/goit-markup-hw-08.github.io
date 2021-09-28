@@ -1,13 +1,25 @@
-.main-portfolio{
+.portfolio{
+
+}
+.portfolio__name{
+    
+}
+.portfolio__filter-text{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    & > li{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
-.portfolio-filter + .portfolio-filter{
+.portfolio__filter-link + .portfolio__filter-link{
     margin-left: 8px;
 }
 
-.filter{
+.portfolio__filter-button{
     padding: 6px 20px;
     background-color: var(--our-team);
     border: 0px;
@@ -17,19 +29,50 @@
     font-size: 16px;
     line-height: 1.625;
     letter-spacing: 0.03em;
-    color: var(--streng-black);
+    color: var(--secondary-title-color);
     cursor: pointer;
     text-align: center; 
     font-family: 'Roboto';
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--time-animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--mail-title-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.filter-down{
+.portfolio__filter-down{
     background-color: var(--accent-color);
     color: var(--mail-title-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
 }
 
-.overlay-text{ 
+.portfolio__cell-filter{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.portfolio__sait{
+    flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+   
+}
+
+.portfolio__overlay{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.portfolio__overlay-text{ 
     position: absolute;
 
     display: flex;
@@ -52,20 +95,14 @@
     color: var(--mail-title-color);
     background:  rgba(33, 150, 243, 0.9);
 
-    .sait-hover:hover &,
-    .sait-hover:focus & {
+    .portfolio__sait-hover:hover &,
+    .portfolio__sait-hover:focus & {
         opacity: 1;
         transform: translateY(0%);
     }
 }
 
-.overlay{
-    position: relative;
-    display: flex;
-    overflow: hidden;
-}
-
-.thumb::before{
+.portfolio__thumb::before{
     display: inline-block;
     position: absolute;
     content: "";
@@ -77,7 +114,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
-
+.main-portfolio{
+    display: flex;
+    flex-direction: column;
+}

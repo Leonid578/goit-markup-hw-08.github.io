@@ -1,14 +1,14 @@
 
-.hover{
+.hover {
     transition-duration: var(--time-animation);
     transition-timing-function: var(--timing-function);
 
-        &:hover, 
-        &:focus {
-        color: var(--mail-title-color);
-        // fill: var(--mail-title-color);
-    }
-    
+    &:hover, 
+    &:focus {
+    color: var(--mail-title-color);
+    fill: var(--mail-title-color);
+}
+
 }
 .navigations .hover{
     font-weight: 500;
