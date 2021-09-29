@@ -32,8 +32,7 @@
 
 
 .icon {
-    fill: #AFB1B8;
-     
+    fill: #AFB1B8;  
   }
 
 .icon.soc-icon{
@@ -49,18 +48,12 @@
 }
   
 .item-icon a:hover svg,
-.item-icon a:focus svg {
-fill:var(--accent-color)
-}
-
+.item-icon a:focus svg,
 .link:focus svg,
-.link:hover svg {
-fill: var(--accent-color);
-}
-
+.link:hover svg,
 .social-item:hover svg,
 .social-item:focus svg{
-    fill:var(--accent-color)
+fill:var(--accent-color)
 }
 
 .soc-link:hover svg,
@@ -128,10 +121,6 @@ color: var(--secondary-text-color);
 
     .active-alltime{
     color: var(--accent-color);
-    }
-
-    .pictures{
-        display: flex;
     }
 
     .navigations{
