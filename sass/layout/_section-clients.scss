@@ -1,36 +1,56 @@
 .section-clients {
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px){
     padding: 94px 0;
   }
+}
 
 .regular-customers{
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.3;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
-    margin-bottom: 50px;
-}
+    margin-bottom: 30px;
 
-// .container-clients {
-//     text-align: center;
-//   }
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+}
 
 .clients{
     align-items: center;
     justify-content: center;
     padding: 0px;
     margin: 0px;
+    flex-basis: calc(100%/2 - 30px);
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+    @media screen and (min-width: 768px) and (max-width:1199px) { 
+      flex-wrap: wrap;
   }
+}
 
-    @media screen and (min-width: 1200px)   {
-      flex-basis: calc(100%/3 - 30px);
-    } 
+.item-client{
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100%/2 - 30px);
+  display: block;
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    flex-basis: calc(100%/3 - 30px);
+}
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100%/6 - 30px);
+  }
 }
 
 .clients li + li{
@@ -41,11 +61,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  max-width: 210px;
   height: 92px;
   fill: #AFB1B8;
   border: 1px solid var(--color-icon);  
   border-radius: 4px;
+
+  @media screen and ( min-width:768px ){
+    width: 226px;
+    height: 92px;
+  }
+  @media screen and ( min-width:1200px ){
+    width: 170px;
+    height: 92px;
+  }
 
   &:hover,
   &:focus {
