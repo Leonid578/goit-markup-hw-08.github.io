@@ -132,10 +132,13 @@ color: var(--secondary-text-color);
     }
 
     .header-right{
-    display: flex;
     margin-left: auto;  
     align-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px)   {
+        display: flex;
+    }
     }
 
     .header-right li+li{
