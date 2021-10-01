@@ -72,8 +72,15 @@
 
 .header-button{
     border: none;
+    fill: var(--color-black);
 
     @media screen and (min-width:767px) {
         display: none;
     }
+}
+
+.header-button:hover,
+.header-button:focus{
+    color: var(--accent-color);
+    cursor: pointer;
 }
