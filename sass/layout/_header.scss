@@ -7,6 +7,7 @@
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .header-right{
@@ -14,20 +15,44 @@
     margin-left: auto;  
     align-content: center;
     align-items: center;
+    margin-left: auto;
+
 
     & li+li{
-        margin-left: 50px;
+        @media screen and (min-width:768px) {
+            margin-left: 0px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 50px;
+        }
     }
     & .hover{
-        padding-top: 32px;
-        padding-bottom: 32px;
-        display: flex;
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            flex-wrap: wrap;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            display: flex;
+        }
     }
 }
    
 .main-nav{
     display:flex;
     align-items: center;
+    // display: inline-block;
+    height: 80px;
+
+    // justify-content: space-between;
 }
 
 
@@ -85,20 +110,26 @@ fill:var(--accent-color)
     }
 
     .padding-header-logo{
-        padding: 24px 0px;
-    }
+        padding: 16px 0px;
 
+        @media screen and (min-width:768px) {
+            padding: 26px 0px;
+        }
+        @media screen and (min-width:768px) {
+            padding: 24px 0px;
+        }
+    }
 
 .header-mail,
 .header-tel{
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    align-items: center;
 
-color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
 }
 
 .notactive:hover,
@@ -125,6 +156,10 @@ color: var(--secondary-text-color);
 
     .navigations{
         display:flex;
+
+        @media screen and (max-width:767px) {
+            display: none;
+        }
     }
 
     .header-link + .header-link {
@@ -136,10 +171,19 @@ color: var(--secondary-text-color);
     align-content: center;
     align-items: center;
 
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+    }
+
     @media screen and (min-width: 1200px)   {
         display: flex;
     }
-    }
+   
+}
 
     .header-right li+li{
         margin-left: 50px;
@@ -199,3 +243,10 @@ color: var(--secondary-text-color);
     border-radius: 2px;
 }
 
+.header-button-svg{
+    fill: var(--color-black);
+}
+
+.header-conteiner{
+    display: none;
+}

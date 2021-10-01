@@ -69,3 +69,11 @@
         fill: var(--accent-color);      
     }
 }
+
+.header-button{
+    border: none;
+
+    @media screen and (min-width:767px) {
+        display: none;
+    }
+}

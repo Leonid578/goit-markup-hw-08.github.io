@@ -59,7 +59,13 @@
     letter-spacing: 0.03em;
     color: var(--main-color);
     display: block;
-    margin-right: 93px;
+
+    @media screen and (min-width:768px) {
+        margin-right: 88px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo span {
@@ -72,7 +78,4 @@
 .footer-submit:focus{
     border-color: var(--accent-color);
     animation: var(--time-animation);
-}
-.padding-header-logo{
-    padding: 24px 0px;
 }
