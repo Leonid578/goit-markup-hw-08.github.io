@@ -13,9 +13,13 @@
     display:inline-block;
     border: 1px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
-    margin-right: 8px;
+    margin-right: 5px;
     transition: var(--time-animation);
     transition: var(--timing-function);
+
+    @media screen and (min-width:1200px) {
+        margin-right: 8px;
+    }
 
     .checkbox:checked + &{
         background-color: var(--accent-color);

@@ -1,6 +1,6 @@
 .button-submit{
-    min-width: 200px;
-    max-height: 50px;
+    width: 200px;
+    height: 50px;
     color: var(--mail-title-color);
     margin-left: 12px ;
     padding: 1px 6px;
@@ -22,6 +22,11 @@
         &:focus{
         background-color: #188ce8;
     }
+
+    @media screen and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
     
 .submit-svg{
@@ -29,8 +34,10 @@
     background-image: url('../Images/send.svg');
 }
 .botton-form{
-    display: flex;
-    margin-top: 20px;
+    @media screen and (min-width: 1200px)   {
+        display: flex;
+        margin-top: 20px;
+    }
 }
     
     
