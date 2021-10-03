@@ -14,23 +14,75 @@
         <div class="container top">
             <nav class="main-nav">
                 <a href="./index.html" id="link-header" class="logo padding-header-logo"> <span>Web</span>Studio</a>
-                <ul class=" navigations">
-                    <li class="header-link"><a href="./index.html" class="hover notactive ">Студия</a></li>
-                    <li class="header-link"><a href="./portfolio.html" class="hover notactive active-alltime">Портфолио</a></li>
-                    <li class="header-link"><a href="" class="notactive hover">Контакты</a></li>
+                <button class="header-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="header-button-svg" width="40" height="40">
+                        <use href="./Images/header-menu.svg#icon-header-menu"></use>
+                    </svg>
+                </button>
+          <!-- *****************************************************************  -->
+    <div class="js-menu-container "  id="mobile-menu">
+    
+        <button type="button" class="header-button js-close-menu">
+            <svg class="header-button-icon" aria-label="Переключатель мобильного меню"  width="40" height="40">
+                <use href="./Images/close_2.svg#icon-close_2" class="icon-menu"></use>
+            </svg>
+        </button>
+    
+        <nav class="menu-conteiner-navigation">
+            <ul class="navigation-list">
+                <li class="navigation-li">
+                    <a href="./index.html" class="notactive ">Студия</a>
+                </li>
+                <li class="navigation-li">
+                    <a href="./portfolio.html" class="notactive curent">Портфолио</a>
+                </li>
+                <li class="navigation-li">
+                    <a href="#" class="notactive">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="header__list-address list-adress">
+            <li class="list-adress-link">
+                <a href="tel:+380961111111" class="menu-conteiner-tel">
+                    <span>+38 096 111 11 11</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="mailto:info@devstudio.com" class="menu-conteiner-mail">  
+                    <span>info@devstudio.com</span>
+                </a>
+            </li>
+        </ul>
+    
+        <ul class="container-app">
+            <li class="list-app">
+               <a href="#" class="link-app">Instagram</a></li>
+            <li class="list-app">
+                <a href="#" class="link-app">Twitter</a></li>
+            <li class="list-app">
+                <a href="#" class="link-app">Facebook</a></li>
+            <li class="list-app">
+                <a href="#" class="link-app">LinkedIn</a></li>
+        </ul>
+    </div>
+               <!-- *****************************************************************  -->
+                <ul class="navigations">
+                    <li class="header-link"><a href="./index.html" class="hover notactive  navigation-pages-header">Студия</a></li>
+                    <li class="header-link"><a href="./portfolio.html" class="hover notactive navigation-pages-header active-alltime">Портфолио</a></li>
+                    <li class="header-link"><a href="" class="notactive hover navigation-pages-header">Контакты</a></li>
                 </ul>
-            </nav> 
+            </nav>
             <ul class="header-right">
-                <li class="item-icon"><a href="info@devstudio.com" class="header-mail hover">
+                <li class="item-icon"><a href="info@devstudio.com" class="header-mail hover for-top">
                     <svg class="icon icon-header" width="16" height="12">
                         <use class="hover" href="./Images/2.svg#icon-letter"></use>
                     </svg>
                     info@devstudio.com</a></li> 
-                <li class="item-icon"><a href="tel:380961111111" class="header-tel hover" >
+                <li class="item-icon"><a href="tel:380961111111" class="header-tel hover for-down" >
                     <svg class="icon icon-header" width="10" height="16">
                         <use class="hover" href="./Images/2.svg#icon-telephone"></use>
                     </svg>
-                   +38 096 111 11 11</a></li>              
+                   +38 096 111 11 11</a></li>            
             </ul>
         </div>
     </header>   
@@ -177,66 +229,78 @@
 </section>
 </main>
 
-    <footer class="footer-sections">
-        <div class="container posicion-foot">
-            <div class="container-footer">
-                <a href="#link-header" class="logo"> <span>Web</span>Studio</a>
-                <address class="bottom--address">  
-                    <ul class="address-footer-link">
-                        <li class="footer-address address--write"> г. Киев, пр-т Леси Украинки, 26</li> 
-                        <li class="address--write"><a class=" footer-mail hover" href="/">info@example.com</a></li>            
-                        <li class="address--write"><a class=" footer-tel hover" href="tel:380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div>
-                <p class="join">
-                    присоединяйтесь
-                </p>
-                <ul class="social-links">
-                    <li class="social-item">
-                        <a href="" class="link soc-link soc-footer hover">
-                            <svg class="icon soc-icon" width="20" height="20">
-                                <use href="./Images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link soc-link soc-footer hover">
-                            <svg class="icon soc-icon" width="20" height="20">
-                                <use href="./Images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li> 
-                        <a href="" class="link soc-link soc-footer hover">
-                            <svg class="icon soc-icon" width="20" height="20">
-                                <use href="./Images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link  soc-link soc-footer hover">
-                            <svg class="icon soc-icon" width="20" height="20">
-                                <use href="./Images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>       
-            </div>  
-    
-            <div class="footer-form" >
-                <h3 class="footer-title">Подпишитесь на рассылку</h3>
-                <form action="#" class="botton-form">
-                    <input type="email" class="footer-submit" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    <button type="submit" class="button-submit">Подписаться
-                        <svg class="submit-svg" width="24" height="24">
-                            <use href=""></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </footer>
+<footer class="footer-sections">
+    <div class="footer-container">  
+             <div class="posicion-foot">
+                 <div class="container-footer">
+                     <a href="#link-header" class="logo-footer"> <span>Web</span>Studio</a>
+                     <address class="bottom--address">  
+                         <ul class="address-footer-link">
+                             <li class="footer-address address--write"> г. Киев, пр-т Леси Украинки, 26</li> 
+                             <li class="address--write"><a class=" footer-mail hover" href="/">info@example.com</a></li>            
+                             <li class="address--write"><a class=" footer-tel hover" href="tel:380961111111">+38 096 111 11 11</a></li>
+                         </ul>
+                     </address>
+                 </div>
+                 <div class="">
+                     <p class="join">
+                         присоединяйтесь
+                     </p>
+                     <ul class="social-links footer-list">
+                         <li class="social-item">
+                             <a href="" class="link soc-link soc-footer hover">
+                                 <svg class="icon soc-icon" width="20" height="20">
+                                     <use href="./Images/symbol-defs.svg#icon-instagram"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="" class="link soc-link soc-footer hover">
+                                 <svg class="icon soc-icon" width="20" height="20">
+                                     <use href="./Images/symbol-defs.svg#icon-twitter"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                         <li> 
+                             <a href="" class="link soc-link soc-footer hover">
+                                 <svg class="icon soc-icon" width="20" height="20">
+                                     <use href="./Images/symbol-defs.svg#icon-facebook"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="" class="link  soc-link soc-footer hover">
+                                 <svg class="icon soc-icon" width="20" height="20">
+                                     <use href="./Images/symbol-defs.svg#icon-linkedin"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                     </ul>       
+                 </div>  
+         </div>
+ 
+             <div class="footer-form" >
+                 <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                 <form action="#" class="botton-form">
+                     <input type="email" class="footer-submit" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                     <button type="submit" class="button-submit">Подписаться
+                         <svg class="submit-svg" width="24" height="24">
+                             <use href=""></use>
+                         </svg>
+                     </button>
+                 </form>
+             </div>
+         </div>
+    </div>
+ </footer>
+
+    <script src="./java/modal.js"></script>
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./java/mobile-menu-workshop.js"></script>
     </body>
     </html> 
