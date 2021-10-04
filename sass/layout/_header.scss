@@ -44,12 +44,11 @@
 }
 
 .for-down{
-    padding-top: 5px;
     padding-bottom: 21px;
 }
 .for-top{
     padding-top: 21px;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
    
 .main-nav{
@@ -88,9 +87,9 @@
 fill:var(--accent-color)
 }
 
-.item-icon{
-    height: 16px;
-}
+// .item-icon{
+//     height: 16px;
+// }
 
 .soc-link:hover svg,
 .soc-link:focus svg {
@@ -133,6 +132,7 @@ fill:var(--accent-color)
 
 .header-mail,
 .header-tel{
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -338,6 +338,10 @@ fill:var(--accent-color)
 .list-app{
     border-right: 1px solid rgba(33,33,33,0.2);
     padding-right: 10px
+}
+
+.list-app + .list-app{
+    margin-left:10px ;
 }
 
 .link-app{

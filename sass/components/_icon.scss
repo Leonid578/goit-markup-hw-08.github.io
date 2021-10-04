@@ -16,6 +16,7 @@
     margin-right: 5px;
     transition: var(--time-animation);
     transition: var(--timing-function);
+    vertical-align: middle;
 
     @media screen and (min-width:1200px) {
         margin-right: 8px;

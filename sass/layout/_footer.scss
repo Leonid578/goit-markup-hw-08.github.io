@@ -86,6 +86,7 @@
 
     @media screen and (min-width: 768px)and (max-width:1199px) {
         margin-right: 165px;
+        margin-bottom: 0px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -109,6 +110,7 @@ margin-bottom: 20px;
 
 .posicion-foot{
     align-items: baseline;
+    margin-bottom: 60px;
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
         display: flex;
@@ -117,6 +119,7 @@ margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width:1200px) {
@@ -130,7 +133,7 @@ margin-bottom: 20px;
 .footer-list{
     @media screen and (max-width: 767px){
         justify-content: center;
-        margin-bottom: 60px;
+        
     }
 }
 
@@ -194,6 +197,7 @@ ul .address--write:not(:last-child){
 .footer-container{
     @media screen and (max-width: 767px) {
         text-align: center;
+        
     }
 
     padding-left: 15px;

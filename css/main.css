@@ -235,6 +235,7 @@ body {
   margin-right: 5px;
   transition: var(--time-animation);
   transition: var(--timing-function);
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 1200px) {
@@ -561,6 +562,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer {
     margin-right: 165px;
+    margin-bottom: 0px;
   }
 }
 
@@ -583,6 +585,7 @@ body {
 
 .posicion-foot {
   align-items: baseline;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -593,6 +596,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -605,7 +609,6 @@ body {
 @media screen and (max-width: 767px) {
   .footer-list {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -824,13 +827,12 @@ ul .address--write:not(:last-child) {
 }
 
 .for-down {
-  padding-top: 5px;
   padding-bottom: 21px;
 }
 
 .for-top {
   padding-top: 21px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .main-nav {
@@ -869,10 +871,6 @@ ul .address--write:not(:last-child) {
 .social-item:hover svg,
 .social-item:focus svg {
   fill: var(--accent-color);
-}
-
-.item-icon {
-  height: 16px;
 }
 
 .soc-link:hover svg,
@@ -921,6 +919,7 @@ ul .address--write:not(:last-child) {
 
 .header-mail,
 .header-tel {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1127,6 +1126,10 @@ ul .address--write:not(:last-child) {
   padding-right: 10px;
 }
 
+.list-app + .list-app {
+  margin-left: 10px;
+}
+
 .link-app {
   text-decoration: none;
   font-family: Roboto;
@@ -1152,7 +1155,7 @@ ul .address--write:not(:last-child) {
   padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../Images/Header-tel@1x-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Header-tel@1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 767px;
@@ -1583,8 +1586,13 @@ ul .address--write:not(:last-child) {
 
 .portfolio__overlay {
   position: relative;
-  display: flex;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay {
+    display: flex;
+  }
 }
 
 .portfolio__overlay-text {
@@ -1734,7 +1742,6 @@ ul .address--write:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 210px;
   height: 92px;
   fill: #AFB1B8;
   border: 1px solid var(--color-icon);

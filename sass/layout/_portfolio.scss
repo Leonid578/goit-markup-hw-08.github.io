@@ -98,8 +98,12 @@
 
 .portfolio__overlay{
     position: relative;
-    display: flex;
     overflow: hidden;
+
+    @media screen and (min-width: 1200px)   {
+        display: flex;
+    }
+
 }
 
 .portfolio__overlay-text{ 
