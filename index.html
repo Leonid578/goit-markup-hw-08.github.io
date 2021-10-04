@@ -157,27 +157,26 @@
         <ul class="pictures">
             <li class="content-img">
                 <div class="pictures-img">
-                    <img srcset="./Images/desctop x1, ./Images/desctop@2x x2"
-                    src="./Images/Чем-мы-занимаемся1.jpg" 
-                    alt="пишет код" 
-                    width="370" 
-                    height="294"><div class="content-text">
+                    <picture> <source srcset="./Images/desctop.jpg 1x, ./Images/desctop2x.jpg 2x"> 
+                        <img src="./Images/desctop.jpg" alt="пишет код" width="370" height="294"></picture>
+                        <div class="content-text"> 
                 <p class="box-text">Десктопные приложения</p></div>
             </div>
         </li>
             <li class="content-img">
                 <div class="pictures-img">
-                    <img srcset="./Images/mobile x1, ./Images/mobile@2x x2"
-                    src="./Images/Чем-мы-занимаемся2.jpg" alt="телефонный дизайн" width="370" height="294"><div class="content-text">
+                    <picture> <source srcset="./Images/mobile.jpg 1x, ./Images/mobile2x.jpg 2x">
+                        <img src="./Images/mobile.jpg" alt="телефонный дизайн" width="370" height="294"></picture>
+                    <div class="content-text">
                 <p class="box-text">Мобильные приложения</p></div> 
             </div>
         </li>
             <li class="content-img">
                 <div class="pictures-img">
-                    <img srcset="./Images/dezaner x1, ./Images/dezaner@2x@2x x2"
-                    src="./Images/Чем-мы-занимаемся3.jpg" alt="дизайн" width="370" height="294"><div class="content-text">
-                <p class="box-text">Дизайнерские решения</p></div>
-            </div>
+                    <picture> <source srcset="./Images/dezaner.jpg 1x, ./Images/dezaner2x.jpg 2x"> 
+                        <img src="./Images/dezaner.jpg" alt="дизайн" width="370" height="294"></picture>
+                        <div class="content-text"><p class="box-text">Дизайнерские решения</p></div>
+                </div>
         </li>     
         </ul>   
     </div>
@@ -190,8 +189,8 @@
     </h2>
     <ul class="our-team-list">                           
         <li class="portrets--card">
-            <img srcset="./Images/IgorDemyanenko x1, ./Images/IgorDemyanenko@2x x2"
-            src="./Images/Команда1.jpg" alt="Игорь Демьяненко" width="260" height="270">
+            <picture> <source srcset="./Images/IgorDemyanenko.jpg 1x, ./Images/IgorDemyanenko2x.jpg 2x" media="(max-width: 767px)">
+                 <img src="./Images/IgorDemyanenko.jpg" alt="Игорь Демьяненко" width="260" height="270"></picture>
             <div class="our-team">
                 <h3 class="our-team-title">Игорь Демьяненко</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -234,11 +233,8 @@
             </div>
         </li>
         <li class="portrets--card">        
-            <img  srcset="./Images/OlgaRepina x1, ./Images/OlgaRepina@2x x2" 
-            src="./Images/Команда2.jpg" 
-            alt="Ольга Репина" 
-            width="260"
-            height="270">
+            <picture> <source srcset="./Images/OlgaRepina.jpg 1x, ./Images/OlgaRepina2x.jpg 2x"  media="(max-width: 767px)"> 
+            <img src="./Images/OlgaRepina.jpg" alt="Ольга Репина" width="260" height="270"></picture>
             <div class="our-team">
             <h3 class="our-team-title">Ольга Репина</h3>
             <p class="our-team-text">Frontend Developer</p> 
@@ -280,11 +276,11 @@
             </div>
         </li>
         <li class="portrets--card">    
-            <img srcset="./Images/NikolayTarasov x1, ./Images/NikolayTarasov@2x x2"
-            src="./Images/Команда3.jpg" 
+            <picture> <source srcset="./Images/NikolayTarasov.jpg 1x, ./Images/NikolayTarasov2x.jpg 2x" media="(max-width: 767px)">  <img 
+            src="./Images/NikolayTarasov.jpg" 
             alt="Николай Тарасов" 
             width="260" 
-            height="270">
+            height="270"></picture>
             <div class="our-team">
             <h3 class="our-team-title">Николай Тарасовd</h3>
             <p class="our-team-text">Marketing</p>
@@ -325,11 +321,8 @@
             </div>
         </li>
         <li class="portrets--card">      
-            <img  srcset="./Images/MikhailErmakov x1, ./Images/MikhailErmakov@2x x2"
-            src="./Images/Команда4.jpg" 
-            alt="Михаил Ермаков" 
-            width="260" 
-            height="270">      
+            <picture>  <source srcset="./Images/MikhailErmakov.jpg 1x, ./Images/MikhailErmakov2x.jpg 2x" media="(max-width: 767px)">
+            <img  src="./Images/MikhailErmakov.jpg" alt="Михаил Ермаков" width="260" height="270"> </picture>
             <div class="our-team"> 
             <h3 class="our-team-title">Михаил Ермаков</h3>
             <p class="our-team-text">UI Designer</p> 
@@ -426,67 +419,66 @@
     <!------------------------------------Footer ----------------------------------------->
 <footer class="footer-sections">
    <div class="footer-container">  
-            <div class="posicion-foot">
-                <div class="container-footer">
-                    <a href="#link-header" class="logo-footer"> <span>Web</span>Studio</a>
-                    <address class="bottom--address">  
-                        <ul class="address-footer-link">
-                            <li class="footer-address address--write"> г. Киев, пр-т Леси Украинки, 26</li> 
-                            <li class="address--write"><a class=" footer-mail hover" href="/">info@example.com</a></li>            
-                            <li class="address--write"><a class=" footer-tel hover" href="tel:380961111111">+38 096 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="">
-                    <p class="join">
-                        присоединяйтесь
-                    </p>
-                    <ul class="social-links footer-list">
-                        <li class="social-item">
-                            <a href="" class="link soc-link soc-footer hover">
-                                <svg class="icon soc-icon" width="20" height="20">
-                                    <use href="./Images/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="link soc-link soc-footer hover">
-                                <svg class="icon soc-icon" width="20" height="20">
-                                    <use href="./Images/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="" class="link soc-link soc-footer hover">
-                                <svg class="icon soc-icon" width="20" height="20">
-                                    <use href="./Images/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="link  soc-link soc-footer hover">
-                                <svg class="icon soc-icon" width="20" height="20">
-                                    <use href="./Images/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>       
-                </div>  
+        <div class="posicion-foot">
+            <div class="container-footer">
+                <a href="#link-header" class="logo-footer"> <span>Web</span>Studio</a>
+                <address class="bottom--address">  
+                    <ul class="address-footer-link">
+                        <li class="footer-address address--write"> г. Киев, пр-т Леси Украинки, 26</li> 
+                        <li class="address--write"><a class=" footer-mail hover" href="/">info@example.com</a></li>            
+                        <li class="address--write"><a class=" footer-tel hover" href="tel:380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="">
+                <p class="join">
+                    присоединяйтесь
+                </p>
+                <ul class="social-links footer-list">
+                    <li class="social-item">
+                        <a href="" class="link soc-link soc-footer hover">
+                            <svg class="icon soc-icon" width="20" height="20">
+                                <use href="./Images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link soc-link soc-footer hover">
+                            <svg class="icon soc-icon" width="20" height="20">
+                                <use href="./Images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="" class="link soc-link soc-footer hover">
+                            <svg class="icon soc-icon" width="20" height="20">
+                                <use href="./Images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link  soc-link soc-footer hover">
+                            <svg class="icon soc-icon" width="20" height="20">
+                                <use href="./Images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>       
+            </div>  
         </div>
 
-            <div class="footer-form" >
-                <h3 class="footer-title">Подпишитесь на рассылку</h3>
-                <form action="#" class="botton-form">
-                    <input type="email" class="footer-submit" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    <button type="submit" class="button-submit">Подписаться
-                        <svg class="submit-svg" width="24" height="24">
-                            <use href=""></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+        <div class="footer-form" >
+            <h3 class="footer-title">Подпишитесь на рассылку</h3>
+            <form action="#" class="botton-form">
+                <input type="email" class="footer-submit" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <button type="submit" class="button-submit">Подписаться
+                    <svg class="submit-svg" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </button>
+            </form>
         </div>
-   </div>
+    </div>
 </footer>
 
 <div class="backdrop is-hidden" data-modal>
