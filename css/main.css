@@ -585,7 +585,12 @@ body {
 
 .posicion-foot {
   align-items: baseline;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .posicion-foot {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -681,6 +686,9 @@ ul .address--write:not(:last-child) {
 @media screen and (max-width: 767px) {
   .footer-container {
     text-align: center;
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -695,7 +703,6 @@ ul .address--write:not(:last-child) {
 
 .hang {
   margin-top: -30px;
-  margin-left: -30px;
   justify-content: center;
 }
 
@@ -703,6 +710,7 @@ ul .address--write:not(:last-child) {
   .hang {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -745,8 +753,13 @@ ul .address--write:not(:last-child) {
 .we-puncts {
   flex-basis: calc(100%/4 - 30px);
   margin-top: 30px;
-  margin-left: 30px;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .we-puncts {
+    margin-left: 30px;
+  }
 }
 
 .cont-icon {
@@ -832,7 +845,12 @@ ul .address--write:not(:last-child) {
 
 .for-top {
   padding-top: 21px;
-  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .for-top-li {
+    margin-bottom: 10px;
+  }
 }
 
 .main-nav {
@@ -1158,29 +1176,28 @@ ul .address--write:not(:last-child) {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Header-tel1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 767px;
   height: 400px;
   justify-content: center;
   background-size: cover;
 }
 
-@media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/Header-tel2x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tel2x-min.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     max-width: 1199px;
-    background-image: url(./../Images/Header-tablet1x-min.jpg);
     background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Header-tablet1x-min.jpg);
   }
 }
 
-@media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/Header-tablet2x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet2x-min.jpg);
   }
 }
 
@@ -1191,13 +1208,13 @@ ul .address--write:not(:last-child) {
     line-height: 1.4;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(./../Images/Header-desctop1x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/Header-desctop1x-min.jpg);
   }
 }
 
-@media not all, screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/Header-tablet2x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-desctop2x-min.jpg);
   }
 }
 
