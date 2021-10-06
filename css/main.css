@@ -686,7 +686,7 @@ ul .address--write:not(:last-child) {
 @media screen and (max-width: 767px) {
   .footer-container {
     text-align: center;
-    width: 480px;
+    width: 320px;
     margin-right: auto;
     margin-left: auto;
   }
