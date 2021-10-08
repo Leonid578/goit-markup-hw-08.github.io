@@ -10,7 +10,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ), 
-        url(../Images/Header-tel1x-min.jpg);
+        url(./Images/Header-tel1x-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     // max-width:767px;
@@ -24,7 +24,7 @@
             rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
-        url(../images/Header-tel2x-min.jpg);
+        url(./images/Header-tel2x-min.jpg);
     }
     @media screen and (min-width:768px) and (max-width:1199px) {
         max-width: 1199px;
@@ -33,7 +33,7 @@
             rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
-        url(../Images/Header-tablet1x-min.jpg);
+        url(./Images/Header-tablet1x-min.jpg);
     }
     @media screen and (min-width: 768px) and (max-width:1199px) and (min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
@@ -42,7 +42,7 @@
             rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
-        url(../images/Header-tablet2x-min.jpg);
+        url(./images/Header-tablet2x-min.jpg);
     }
     @media screen and (min-width:1200px){
         max-width: 1600px;
@@ -54,7 +54,7 @@
             rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
-        url(../Images/Header-desctop1x-min.jpg);
+        url(./Images/Header-desctop1x-min.jpg);
     }
     @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
@@ -63,7 +63,7 @@
             rgba(47,48,58,0.4),
             rgba(47,48,58,0.4)
         ),
-        url(../images/Header-desctop2x-min.jpg);
+        url(./images/Header-desctop2x-min.jpg);
     }
 }
     
