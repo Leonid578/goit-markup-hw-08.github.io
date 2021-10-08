@@ -7,7 +7,6 @@
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ), 
         url(../Images/Header-tel1x-min.jpg);
@@ -21,7 +20,6 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx){
     background-image: linear-gradient(
-            rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
         url(../images/Header-tel2x-min.jpg);
@@ -30,7 +28,6 @@
         max-width: 1199px;
         background-size: cover;
         background-image:linear-gradient(
-            rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
         url(../Images/Header-tablet1x-min.jpg);
@@ -39,7 +36,6 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) {
         background-image: linear-gradient( 
-            rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
         url(../images/Header-tablet2x-min.jpg);
@@ -51,7 +47,6 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(
-            rgba(47,48,58,0.4), 
             rgba(47,48,58,0.4)
         ),
         url(../Images/Header-desctop1x-min.jpg);
@@ -60,7 +55,6 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx)  {
     background-image: linear-gradient(
-            rgba(47,48,58,0.4),
             rgba(47,48,58,0.4)
         ),
         url(../images/Header-desctop2x-min.jpg);
